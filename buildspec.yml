@@ -3,14 +3,14 @@ version: 0.2
 phases:
    install:
       commands:
-       - yum -y install make gcc perl
+       - yum -y install redhat-rpm-config make gcc perl
    pre_build:
       commands:
        - cd src
    build:
       commands:
-       - make -j2 bin-x86_64-efi/ipxe.usb
-       - make -j2 bin-x86_64-pcbios/ipxe.usb
+       - EXTRA_CFLAGS=$RPM_OPT_FLAGS EXTRA_LDFLAGS=$RPM_LD_FLAGS make -j2 bin-x86_64-efi/ipxe.usb
+       - EXTRA_CFLAGS=$RPM_OPT_FLAGS EXTRA_LDFLAGS=$RPM_LD_FLAGS make -j2 bin-x86_64-pcbios/ipxe.usb
 
 artifacts:
    files:
