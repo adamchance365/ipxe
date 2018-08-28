@@ -3,7 +3,7 @@ version: 0.2
 phases:
    install:
       commands:
-       - yum -y install make gcc
+       - yum -y install make gcc perl
    pre_build:
       commands:
        - cd src
