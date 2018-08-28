@@ -2,8 +2,8 @@ version: 0.2
 
 env:
    variables:
-      EXTRA_CFLAGS: $RPM_OPT_FLAGS
-      EXTRA_LDFLAGS: $RPM_LD_FLAGS
+      EXTRA_CFLAGS: "$RPM_OPT_FLAGS"
+      EXTRA_LDFLAGS: "$RPM_LD_FLAGS"
 
 phases:
    install:
