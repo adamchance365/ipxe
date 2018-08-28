@@ -8,7 +8,7 @@ env:
 phases:
    install:
       commands:
-       - yum -y install redhat-rpm-config make
+       - yum -y install redhat-rpm-config make gcc
    pre_build:
       commands:
        - cd src
