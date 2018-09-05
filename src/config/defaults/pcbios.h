@@ -34,6 +34,7 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 #define	IMAGE_PXE		/* PXE image support */
 #define IMAGE_SCRIPT		/* iPXE script image support */
 #define IMAGE_BZIMAGE		/* Linux bzImage image support */
+#define	IMAGE_COMBOOT		/* SYSLINUX COMBOOT image support */
 
 #define PXE_STACK		/* PXE stack in iPXE - required for PXELINUX */
 #define PXE_MENU		/* PXE menu booting */
