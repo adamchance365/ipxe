@@ -29,6 +29,9 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 #define IOMAP_VIRT
 #endif
 
+#undef ROM_BANNER_TIMEOUT
+#define ROM_BANNER_TIMEOUT 0
+
 #define	IMAGE_ELF		/* ELF image support */
 #define	IMAGE_MULTIBOOT		/* MultiBoot image support */
 #define	IMAGE_PXE		/* PXE image support */
