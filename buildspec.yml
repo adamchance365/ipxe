@@ -12,8 +12,8 @@ phases:
       commands:
        - EXTRA_CFLAGS=$RPM_OPT_FLAGS EXTRA_LDFLAGS=$RPM_LD_FLAGS make -j2 bin-x86_64-efi/snponly.efi
        - EXTRA_CFLAGS=$RPM_OPT_FLAGS EXTRA_LDFLAGS=$RPM_LD_FLAGS make -j2 bin-x86_64-efi/ipxe.usb
-       - EXTRA_CFLAGS=$RPM_OPT_FLAGS EXTRA_LDFLAGS=$RPM_LD_FLAGS make -j2 bin-x86_64-pcbios/undionly.kpxe CONFIG=bios
-       - EXTRA_CFLAGS=$RPM_OPT_FLAGS EXTRA_LDFLAGS=$RPM_LD_FLAGS make -j2 bin-x86_64-pcbios/ipxe.usb CONFIG=bios
+       - EXTRA_CFLAGS=$RPM_OPT_FLAGS EXTRA_LDFLAGS=$RPM_LD_FLAGS CONFIG=bios make -j2 bin-x86_64-pcbios/undionly.kpxe
+       - EXTRA_CFLAGS=$RPM_OPT_FLAGS EXTRA_LDFLAGS=$RPM_LD_FLAGS CONFIG=bios make -j2 bin-x86_64-pcbios/ipxe.usb
 
 artifacts:
    files:
